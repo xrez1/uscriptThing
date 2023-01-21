@@ -20,8 +20,7 @@
         var x = src
         var y = x.replace("thumbnails", "/images");
         var z = y.replace("thumbnail_", "");
-        var q = z.replace("gelbooru.com","img3.gelbooru.com");
-        return q;
+        return z;
     }
 
     $(".thumbnail-preview").hover(function () {

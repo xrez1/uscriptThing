@@ -7,16 +7,15 @@
 // @match        https://gelbooru.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
+// @updateURL    https://github.com/xrez1/uscriptThing/raw/master/imagehover.user.js
 // ==/UserScript==
 
 (function() {
     'use strict';
 
     $(".thumbnail-preview").hover(function () {
-        console.log("hovering")    
-        
+        print(this.$("img"))
         }, function () {
-            console.log("stopped hovering")
         }
     );
 
